@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+static_tf/CMakeFiles/subscriber.dir/rule:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f CMakeFiles/Makefile2 static_tf/CMakeFiles/subscriber.dir/rule
+.PHONY : static_tf/CMakeFiles/subscriber.dir/rule
+
+# Convenience name for target.
+subscriber: static_tf/CMakeFiles/subscriber.dir/rule
+
+.PHONY : subscriber
+
+# fast build rule for target.
+subscriber/fast:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/subscriber.dir/build.make static_tf/CMakeFiles/subscriber.dir/build
+.PHONY : subscriber/fast
+
+# Convenience name for target.
+static_tf/CMakeFiles/publisher.dir/rule:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f CMakeFiles/Makefile2 static_tf/CMakeFiles/publisher.dir/rule
+.PHONY : static_tf/CMakeFiles/publisher.dir/rule
+
+# Convenience name for target.
+publisher: static_tf/CMakeFiles/publisher.dir/rule
+
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/publisher.dir/build.make static_tf/CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
+
+# Convenience name for target.
 static_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
 	cd /home/zwh/experiment_4/build && $(MAKE) -f CMakeFiles/Makefile2 static_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : static_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
@@ -692,6 +722,60 @@ actionlib_msgs_generate_messages_lisp/fast:
 	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make static_tf/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
+src/publisher.o: src/publisher.cpp.o
+
+.PHONY : src/publisher.o
+
+# target to build an object file
+src/publisher.cpp.o:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/publisher.dir/build.make static_tf/CMakeFiles/publisher.dir/src/publisher.cpp.o
+.PHONY : src/publisher.cpp.o
+
+src/publisher.i: src/publisher.cpp.i
+
+.PHONY : src/publisher.i
+
+# target to preprocess a source file
+src/publisher.cpp.i:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/publisher.dir/build.make static_tf/CMakeFiles/publisher.dir/src/publisher.cpp.i
+.PHONY : src/publisher.cpp.i
+
+src/publisher.s: src/publisher.cpp.s
+
+.PHONY : src/publisher.s
+
+# target to generate assembly for a file
+src/publisher.cpp.s:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/publisher.dir/build.make static_tf/CMakeFiles/publisher.dir/src/publisher.cpp.s
+.PHONY : src/publisher.cpp.s
+
+src/subscriber.o: src/subscriber.cpp.o
+
+.PHONY : src/subscriber.o
+
+# target to build an object file
+src/subscriber.cpp.o:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/subscriber.dir/build.make static_tf/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+.PHONY : src/subscriber.cpp.o
+
+src/subscriber.i: src/subscriber.cpp.i
+
+.PHONY : src/subscriber.i
+
+# target to preprocess a source file
+src/subscriber.cpp.i:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/subscriber.dir/build.make static_tf/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
+.PHONY : src/subscriber.cpp.i
+
+src/subscriber.s: src/subscriber.cpp.s
+
+.PHONY : src/subscriber.s
+
+# target to generate assembly for a file
+src/subscriber.cpp.s:
+	cd /home/zwh/experiment_4/build && $(MAKE) -f static_tf/CMakeFiles/subscriber.dir/build.make static_tf/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
+.PHONY : src/subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -702,6 +786,8 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... subscriber"
+	@echo "... publisher"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -740,6 +826,12 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... src/publisher.o"
+	@echo "... src/publisher.i"
+	@echo "... src/publisher.s"
+	@echo "... src/subscriber.o"
+	@echo "... src/subscriber.i"
+	@echo "... src/subscriber.s"
 .PHONY : help
 
 

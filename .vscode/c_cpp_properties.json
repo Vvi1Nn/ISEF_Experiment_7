@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zwh/experiment_2/devel/include/**",
+        "/home/zwh/zwh_main/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/zwh/zwh_main/src/Universal_Robots_ROS_Driver/controller_stopper/include/**",
+        "/home/zwh/experiment_3/src/learning_api/include/**",
+        "/home/zwh/experiment_3/src/learning_file/include/**",
+        "/home/zwh/experiment_3/src/learning_launch/include/**",
+        "/home/zwh/experiment_3/src/learning_node_remapping/include/**",
+        "/home/zwh/experiment_3/src/learning_param_remapping/include/**",
+        "/home/zwh/experiment_3/src/learning_parameter/include/**",
+        "/home/zwh/experiment_2/src/learning_service/include/**",
+        "/home/zwh/experiment_2/src/learning_topic/include/**",
+        "/home/zwh/experiment_3/src/learning_topic_remapping/include/**",
+        "/home/zwh/experiment_4/src/static_tf/include/**",
+        "/home/zwh/zwh_main/src/Universal_Robots_ROS_Driver/ur_calibration/include/**",
+        "/home/zwh/zwh_main/src/fmauch_universal_robot/ur_kinematics/include/**",
+        "/home/zwh/zwh_main/src/Universal_Robots_ROS_Driver/ur_robot_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

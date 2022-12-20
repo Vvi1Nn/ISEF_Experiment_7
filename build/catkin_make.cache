@@ -1,2 +1,2 @@
-static_tf
+dynamic_tf:static_tf
 -DCATKIN_DEVEL_PREFIX=/home/zwh/experiment_4/devel -DCMAKE_INSTALL_PREFIX=/home/zwh/experiment_4/install -G Unix Makefiles
