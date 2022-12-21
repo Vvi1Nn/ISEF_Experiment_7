@@ -1,0 +1,17 @@
+<launch>
+
+    <!-- Start the turtle node and keyboard control node -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key_control" output="screen"/>
+    
+    <!-- Create the second turtle -->
+    <node pkg="demo_tf" type="spawn_turtle" name="turtle2" output="screen" />
+    
+    <!-- Start two coordinate publish nodes -->
+    <node pkg="demo_tf" type="publish_relation" name="caster1" output="screen" args="turtle1" />
+    <node pkg="demo_tf" type="publish_relation" name="caster2" output="screen" args="turtle2" />
+    
+    <!-- Start the coordinate transition node -->
+    <node pkg="demo_tf" type="velocity" name="listener" output="screen" />
+
+</launch>

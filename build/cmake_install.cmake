@@ -131,8 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zwh/experiment_4/build/gtest/cmake_install.cmake")
+  include("/home/zwh/experiment_4/build/learning_rosbag/cmake_install.cmake")
   include("/home/zwh/experiment_4/build/static_tf/cmake_install.cmake")
+  include("/home/zwh/experiment_4/build/demo_tf/cmake_install.cmake")
   include("/home/zwh/experiment_4/build/dynamic_tf/cmake_install.cmake")
+  include("/home/zwh/experiment_4/build/multi_tf/cmake_install.cmake")
 
 endif()
 

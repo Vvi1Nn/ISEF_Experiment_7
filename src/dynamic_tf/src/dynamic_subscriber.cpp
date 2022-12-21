@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
     ros::Rate r(1);
     while (ros::ok())
     {
-    // 4.Generate a coordinate point (relative to the child coordinate system)
+        // 4.Generate a coordinate point (relative to the child coordinate system)
         geometry_msgs::PointStamped point_turtle;
         point_turtle.header.frame_id = "turtle1";
         point_turtle.header.stamp = ros::Time();
         point_turtle.point.x = 1;
         point_turtle.point.y = 1;
         point_turtle.point.z = 0;
-    // 5.Transform coordinate point (relative to parent coordinate system)
+        // 5.Transform coordinate point (relative to parent coordinate system)
         // Create a new coordinate point to receive the result of the transformation  
         // Use a try statement or sleep, otherwise coordinate conversion may fail due to delayed cache reception
         try
