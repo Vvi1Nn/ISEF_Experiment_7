@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     spawn.request.name = "turtle2";
     spawn.request.x = 1.0;
     spawn.request.y = 2.0;
-    spawn.request.theta = 3.12415926;
+    spawn.request.theta = 3.1415926;
     bool flag = client.call(spawn);
     if (flag)
     {
